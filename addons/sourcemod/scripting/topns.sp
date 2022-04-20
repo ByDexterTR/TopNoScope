@@ -32,7 +32,7 @@ public void OnPluginStart()
 	HookEvent("player_death", OnClientDead);
 	SQL_TConnect(OnSQLConnect, "topns");
 	
-	CreateConVar("sm_ns_bildiri", "1", "NoScope atılınca sohbet üzerinden bildirsin mi?\n0 = Hayır\n1 = Evet", 0, true, 0.0, true, 1.0);
+	announce = CreateConVar("sm_ns_bildiri", "1", "NoScope atılınca sohbet üzerinden bildirsin mi?\n0 = Hayır\n1 = Evet", 0, true, 0.0, true, 1.0);
 	AutoExecConfig(true, "TopNs", "ByDexter");
 }
 
